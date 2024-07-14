@@ -1,0 +1,27 @@
+Simple Program to show how to configure spring beans using Java file 
+and constructor dependency injection:
+Programs:
+* Employee.java
+* Student.java
+* AppConfig.java
+* Test.java
+Note:
+* AnnotationConfigApplicationContext is a implementation class of ApplicationContext interface.
+* AnnotationConfigApplicationContext container is used to Annotation bean configuration.
+* The getBeanDefinitionCount method is used to get number of beans defined in the factory.
+* The getBeanDefinitionNames method is used to get names of all beans defined in this factory.
+* If no beans are configured but we try to get beans from the context it given Exception that is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'xxxx' available.
+* <context:annotation-config/> tag is use to enable Annotation configuration Spring Application.
+Output:
+Number of Beans: 8
+Beans Names:
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+appConfig
+getEmployee
+getStudent
+Employee [empId=102, empName=Michel, age=28, designation=Software Tester]
+Student [sId=1101, sName=Lissa, age=26, course=Cyber Security]
