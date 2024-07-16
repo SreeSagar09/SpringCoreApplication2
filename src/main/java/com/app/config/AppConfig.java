@@ -11,13 +11,13 @@ public class AppConfig {
 	
 	@Bean
 	public Employee getEmployee() {
-		Employee employee = new Employee(102, "Michel", 28, "Software Tester");
+		Employee employee = new Employee("102", "Michel", 28, "Software Tester");
 		return employee;
 	}
 	
 	@Bean
 	public Student getStudent() {
-		Student student = new Student(1101, "Lissa", 26, "Cyber Security");
+		Student student = new Student("1101", "Lissa", 26, "Cyber Security");
 		return student;
 	}
 }
